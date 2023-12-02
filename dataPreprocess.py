@@ -25,7 +25,7 @@ def data_load():
 
     try:
         # load dataset
-        df = pd.read_csv(r'data.csv', encoding='ISO-8859-1')# Convert InvoiceDate from object to datetime format
+        df = pd.read_csv(r'/data.csv', encoding='ISO-8859-1')# Convert InvoiceDate from object to datetime format
         df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
         df.dropna()
         
